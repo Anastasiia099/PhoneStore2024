@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<button type="button" class="btn btn-success">Success</button>
+
+@model Phone
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+        <div class="card">
+            <img src="https://img.jabko.ua/image/cache/catalog/products/2022/04/081823/iphone11-black-select-2019-1397x1397.jpg.webp" class="card-img-top" alt="..." >
+            <div class="card-body">
+                <h5 class="card-title">@Model.Name</h5>
+                <p class="card-text">This is @Model.Category. Price is @Model.Price$</p>
+            </div>
+        </div>
+    </div>
+</div>
